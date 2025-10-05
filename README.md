@@ -24,7 +24,7 @@ Non-functional:
 
 ## 2\. Model description
 
-Author
+Authors
 
 | author\_id | INT, PK |
 | :---: | :---: |
@@ -33,14 +33,14 @@ Author
 | birth\_year | INT |
 | nationality | VARCHAR (100) |
 
-Category
+Categories
 
 | category\_id | INT, PK |
 | :---: | :---: |
 | category\_name | VARCHAR (100) |
 | description | VARCHAR (200) |
 
-Book
+Books
 
 | book\_id | INT, PK |
 | :---: | :---: |
@@ -59,7 +59,14 @@ BookdAuthors(manty-to-many)
 | author\_id | INT |
 | author\_order | INT |
 
-## 
+Users
+
+| user\_id | INT, PK |
+| :---: | :---: |
+| username | VARCHAR (50), UNIQUE |
+| email | VARCHAR (100), UNIQUE |
+| password\_\_hash | VARCHAR (100) |
+| role | VARCHAR (20) |
 
 ## 3\. Operations description
 
